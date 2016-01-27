@@ -103,3 +103,11 @@ a:link, a:hover, a:active, a:visited {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+
+@media only screen and (min-width:890px) { 
+  .main {
+    svg {
+      width: 50%;
+    }
+  }
+}
