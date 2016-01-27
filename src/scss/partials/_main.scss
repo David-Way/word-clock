@@ -1,0 +1,105 @@
+html, body, .viewport {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+  background: transparent radial-gradient(ellipse at center center , #444455 0px, #010101 99%, #444444 99%) repeat scroll 0% 0%;
+
+  background: -moz-radial-gradient(center, ellipse cover, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(153,218,255,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
+  background:-webkit-radial-gradient(center, ellipse cover, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+  background:radial-gradient(ellipse at center, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99DAFF', endColorstr='#008080',GradientType=1 ); /* ie6-9 */
+  background: rgba(153,218,255,1);
+
+}
+
+.main {
+  border: 4px solid #fefefe;
+  height: 100%;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+
+  svg {
+    width: 60%;
+    height: auto;
+  }
+}
+
+a:link, a:hover, a:active, a:visited {
+  text-decoration: none;
+  cursor: default;
+  color: rgba(255, 192, 203, 1);
+}
+
+.shameless-self-promotion {
+  position: absolute;
+  visibility: hidden;
+  cursor: default;
+  font-size: 22px;
+  line-height: 22px;
+  padding: 8px;
+  bottom: 0;
+  right: 0;
+  color: transparent;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently*/
+  color: rgba(255, 192, 203, 1);
+  text-decoration: none;
+}
+
+.shameless-self-promotion:hover {
+  visibility: visible;
+}
+
+/* items flex/expand vertically */
+.vbox {
+  /* previous syntax */
+  display: -webkit-box;
+  display:    -moz-box;
+  display:         box;
+  -webkit-box-orient: vertical;
+     -moz-box-orient: vertical;
+      -ms-box-orient: vertical;
+          box-orient: vertical;
+  /* current syntax */
+  display: -webkit-flex;
+  display:    -moz-flex;
+  display:     -ms-flex;
+  display:         flex;
+  -webkit-flex-direction: column;
+     -moz-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/* items flex/expand horizontally */
+.hbox {
+  /* previous syntax */
+  display: -webkit-box;
+  display:    -moz-box;
+  display:     -ms-box;
+  display:         box;
+  -webkit-box-orient: horizontal;
+     -moz-box-orient: horizontal;
+      -ms-box-orient: horizontal;
+          box-orient: horizontal;
+  /* current syntax */
+  display: -webkit-flex;
+  display:    -moz-flex;
+  display:     -ms-flex;
+  display:         flex;
+  -webkit-flex-direction: row;
+     -moz-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
