@@ -68,9 +68,7 @@
     function displayTime(now){
       var hour = now.get('hour');
       var minutes = now.get('minute');
-      hour = 0;
-      minutes = 30;
-      console.log(hour + ':' + minutes);
+      //console.log(hour + ':' + minutes);
 
       if (hour >= 12) {
         hour = hour - 12;
